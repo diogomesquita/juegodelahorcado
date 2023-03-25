@@ -33,7 +33,7 @@ function escreverAcerto(index) {
     jogo.font = "bold 42px Inter";
     jogo.lineCap = "round";
     jogo.fillStyle = "#0A3871";
-    jogo.lineWidth = 6;
+    jogo.lineWidth = 5;
     let tracinhosPalavra = 300/segredo.length;
     jogo.fillText(segredo[index], 20 + (tracinhosPalavra * index), 430);
 }
@@ -42,7 +42,7 @@ function escreverErro(letra, erros) {
     jogo.font = "bold 34px Inter";
     jogo.lineCap = "round";
     jogo.fillStyle = "#0A3871";
-    jogo.lineWidth = 6;
+    jogo.lineWidth = 5;
     jogo.fillText(letra, 20 + (25 * (10 -erros)), 500, 20);
 }
 
