@@ -37,6 +37,9 @@ function iniciarJogo() {
     desenharCanvas();
     desenharLinhas();
 
+    navigator.virtualKeyboard.overlaysContent = true;
+    navigator.virtualKeyboard.show();
+
     document.onkeydown = (e) => {
         let letra = e.key.toUpperCase();
 

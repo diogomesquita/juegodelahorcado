@@ -23,7 +23,7 @@ function desenharLinhas() {
     let tracinhosPalavra = 300/segredo.length;
     for(let i = 0; i < segredo.length; i++) {
         jogo.moveTo(20+(tracinhosPalavra * i), 450);
-        jogo.lineTo(50+(tracinhosPalavra * i), 450);
+        jogo.lineTo(40+(tracinhosPalavra * i), 450);
     }
     jogo.stroke();
     jogo.closePath();
