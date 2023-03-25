@@ -33,7 +33,7 @@ function iniciarJogo() {
     document.querySelector(".menuInicial").style.display = "none";
     document.querySelector("h1").style.display = "none";
     sortearPalavra();
-    window.TouchEvent.keyboard = true;
+
     desenharCanvas();
     desenharLinhas();
 
