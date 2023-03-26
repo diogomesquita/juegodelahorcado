@@ -32,14 +32,13 @@ function contarErros() {
 function iniciarJogo() {
     document.querySelector(".menuInicial").style.display = "none";
     document.querySelector("h1").style.display = "none";
+    document.querySelector("#receptor").focus();
     sortearPalavra();
 
     desenharCanvas();
     desenharLinhas();
 
-    navigator.virtualKeyboard.overlaysContent = true;
-    navigator.virtualKeyboard.show();
-
+    document.querySelector('#receptor').addEventListener("keydown",
     document.onkeydown = (e) => {
         let letra = e.key.toUpperCase();
 
@@ -62,5 +61,5 @@ function iniciarJogo() {
             verificarAcertos();
             console.log(acertos);
         }
-    }
+    });
 }

@@ -37,6 +37,10 @@ body{
     text-align: center;
   }
 
+  #receptor {
+    display: none;
+  }
+
   .tabuleiro {
     display: flex;
     flex-flow: column wrap;
