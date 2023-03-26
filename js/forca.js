@@ -38,8 +38,7 @@ function iniciarJogo() {
     desenharCanvas();
     desenharLinhas();
 
-    document.querySelector('#receptor').addEventListener("keydown",
-    document.onkeydown = (e) => {
+    document.querySelector("#receptor").addEventListener("keyup", (e) => {
         let letra = e.key.toUpperCase();
 
         if(!letras.includes(letra)){

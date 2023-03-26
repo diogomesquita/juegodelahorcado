@@ -38,7 +38,14 @@ body{
   }
 
   #receptor {
-    display: none;
+    margin: auto;
+    border: none;
+    background: none;
+    color: transparent;
+  }
+  
+  #receptor:focus-visible {
+    outline: none;
   }
 
   .tabuleiro {
