@@ -57,14 +57,21 @@ body{
     margin-right: 0;
   }
 
+  .dica {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: #0A3871;
+  }
+
   @media screen and (max-width: 500px) {
   body {
     flex-flow: column wrap;
     }
 
   h1 {
-    font-size: 2.5rem;
-    max-width: 400px;
+    font-size: 2.45rem;
+    max-width: 390px;
    }
 
   #btnIniciar {

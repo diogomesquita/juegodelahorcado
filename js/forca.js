@@ -1,6 +1,10 @@
 let jogo = document.querySelector("#forca").getContext('2d');
-let segredos = ["DEUS", "VIDA", "FAMILIA", "GRATIDAO", "SUCESSO", "LIBERDADE", "PAZ", "RESPEITO", "OBJETIVO", "ESCOLHAS"];
+let segredos = [{palavra:"DEUS", conceito: "é amor"}, {palavra:"VIDA", conceito:"benção"}, {palavra:"FAMILIA", conceito: "apoio"},
+{palavra:"GRATIDAO", conceito: "uma forma de oração"}, {palavra:"SUCESSO", conceito:"Consequência do esforço"},
+{palavra:"LIBERDADE", conceito: "direito de todos"}, {palavra:"PAZ", conceito: "requer equilíbrio"}, {palavra: "RESPEITO", conceito: "é um dever"},
+{palavra:"OBJETIVO", conceito:"saber o que quer"}, {palavra:"ESCOLHAS", conceito: "livre arbítrio"}];
 let segredo = "";
+let dica = "";
 let letras = [];
 let erros = [];
 let acertos = 0;
@@ -8,8 +12,12 @@ let gameOver = 9;
 
 function sortearPalavra() {
     let palavra = segredos[Math.floor(Math.random() * segredos.length)];
-    segredo = palavra;
+    segredo = palavra.palavra;
+    dica = palavra.conceito;
     console.log(segredo);
+    console.log(dica);
+
+    document.querySelector(".dica").innerHTML += `<p>${dica}</p>`;
 }
 
 function verificarLetra(key) {
