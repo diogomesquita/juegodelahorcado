@@ -61,4 +61,14 @@ function iniciarJogo() {
             console.log(acertos);
         }
     });
+
+    document.onclick = (e) => {
+        e.preventDefault();
+        document.querySelector("#receptor").focus();
+    }
+
+    document.ontouchstart = (e) => {
+        e.preventDefault();
+        document.querySelector("#receptor").focus();
+    }
 }
